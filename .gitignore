@@ -27,3 +27,5 @@ hv3d-*.tar
 
 # Secrets
 config/secret.exs
+
+.elixir_ls

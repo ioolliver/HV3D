@@ -10,7 +10,8 @@ defmodule HV3D.Application do
     children = [
       # Starts a worker by calling: HV3D.Worker.start_link(arg)
       # {HV3D.Worker, arg}
-      HV3D.Consumer
+      HV3D.Database,
+      HV3D.Discord.Consumer
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

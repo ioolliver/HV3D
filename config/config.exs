@@ -1,12 +1,15 @@
 import Config
 
 config :nostrum,
-  token: "",
+  token: "", # Secret
   gateway_intents: :all
 
 
 config :hv3d,
-  register_channel: 987340565710508042
+  database_url: "", # Secret
+  roles_id: %{
+    registred: 987152935534358588
+  }
 
 
 import_config("secret.exs")
